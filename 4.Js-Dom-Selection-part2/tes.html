@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dom Selection</title>
+  <style>
+    * { 
+        border: 2px solid #dedede; 
+        padding: 15px; 
+        margin: 15px; 
+    }
+    html { 
+      margin: 0;
+      padding: 0;
+    }
+    body { 
+      max-width: 600px;
+      margin: 30px auto;
+      font-family: sans-serif;
+      color: #333;
+    }
+    /* misal kita ingin mengubah warna dari element p dengan css */
+    /* p {
+      color: green;
+    } */
+    /* kita bisa tulis seperti itu lalu bagaimana jika kita ingin memilih paragraf ke 4 dengan css? */
+    /* #b p {
+      color: green;
+    } */
+    /* kita bisa buat seperti itu, yang artinya kita akan mengambil element p yang ada didalam element dengan id b */
+  </style>
+</head>
+<body>
+
+  <h1 id="judul">Hello World</h1>
+  <div id="container">
+      <section id="a">
+          <p class="p1">paragraf 1</p>
+          <a href="http://wa.me/62895392678433">My WhatsApp</a>
+          <p class="p2">paragraf 2</p>
+          <p class="p3">paragraf 3</p>
+      </section>
+      <section id="b">
+          <p>paragraf 4</p>
+          <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+          </ul>
+      </section>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

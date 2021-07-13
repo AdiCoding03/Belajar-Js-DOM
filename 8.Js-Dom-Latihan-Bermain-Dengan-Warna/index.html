@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bermain Dengan Warna</title>
+    <style>
+      html,
+      body {
+        /* kita juga harus mengubah htmlnya karna html apa yang ada diluar body atau parentnya body */
+        height: 100%;
+        /* sekarang kemanapun kita menggerakan mousenya warnanya akan berubah */
+      }
+      body {
+        text-align: center;
+      }
+      .ubahWarna {
+        background-color: lightblue;
+      }
+      .kotak {
+        width: 25px;
+        height: 25px;
+        margin: auto;
+      }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+      }
+      .blue {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bermain Dengan Warna</h1>
+
+    <button type="button" id="button">Ubah Warna</button>
+
+    <br /><br />
+
+    <div class="kotak red"></div>
+    <!-- kita tambahkan min dan maxnya -->
+    <input type="range" name="slideRed" min="0" max="255" />
+    <!-- kita buat untuk green dan blue juga -->
+
+    <div class="kotak green"></div>
+    <!-- kita tambahkan min dan maxnya -->
+    <input type="range" name="slideGreen" min="0" max="255" />
+
+    <div class="kotak blue"></div>
+    <!-- kita tambahkan min dan maxnya -->
+    <input type="range" name="slideBlue" min="0" max="255" />
+
+    <script src="script.js"></script>
+  </body>
+</html>
